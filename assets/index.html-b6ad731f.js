@@ -1,0 +1,1 @@
+import{ab as t,C as a,D as o,A as e,O as r}from"./framework-e618a78f.js";const s={},c=e("h2",{id:"robomaster",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#robomaster","aria-hidden":"true"},"#"),r(" RoboMaster")],-1),n=[c];function d(_,i){return a(),o("div",null,n)}const l=t(s,[["render",d],["__file","index.html.vue"]]);export{l as default};
