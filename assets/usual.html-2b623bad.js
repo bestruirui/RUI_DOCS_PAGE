@@ -9,7 +9,7 @@ import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=
     --name aria2ng \\
     --restart unless-stopped \\
     --log-opt max-size=1m \\
-    --network RUI \\
+    --network host \\
     -e PUID=$UID \\
     -e PGID=$GID \\
     -e RPC_SECRET=100427 \\
@@ -61,7 +61,7 @@ import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=
    -v /docker/rclone/config:/config/rclone \\
    -v /docker:/upload \\
    -v /docker/rclone/cache:/root/.cache \\
-   -p 5572:5572
+   -p 5572:5572 \\
    rclone/rclone:latest  rcd --rc-web-gui --rc-addr=0.0.0.0:5572  --rc-user=admin --rc-pass=1004
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="ddns-go" tabindex="-1"><a class="header-anchor" href="#ddns-go" aria-hidden="true">#</a> ddns-go</h2><p>ddns</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run -d \\
    --name ddns-go \\
