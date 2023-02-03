@@ -1,4 +1,4 @@
-import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=i(`<h2 id="portainer" tabindex="-1"><a class="header-anchor" href="#portainer" aria-hidden="true">#</a> Portainer</h2><p>Docker可视化管理</p><div class="language-Dockcer line-numbers-mode" data-ext="Dockcer"><pre class="language-Dockcer"><code>docker run -d \\
+import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=i(`<h2 id="portainer" tabindex="-1"><a class="header-anchor" href="#portainer" aria-hidden="true">#</a> Portainer</h2><p>Docker可视化管理</p><div class="language-Dockcer line-numbers-mode" data-ext="Dockcer"><pre class="language-Dockcer"><code>docker run -d \\
 --restart=always \\
 --name=&quot;portainer&quot; \\
 -p 9001:9000 \\
@@ -69,4 +69,11 @@ import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=
    --net=host \\
    -v /opt/ddns-go:/root \\
     jeessy/ddns-go
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,27),s=[r];function l(c,v){return n(),d("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="adguard" tabindex="-1"><a class="header-anchor" href="#adguard" aria-hidden="true">#</a> AdGuard</h2><p>去广告神器</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run --name AdGuard\\
+    --restart unless-stopped\\
+    --net RUI \\
+    --ip 192.168.31.11 \\
+    -v /docker/adguard/workdir:/opt/adguardhome/work \\
+    -v /docker/adguard/confdir:/opt/adguardhome/conf \\
+    -d adguard/adguardhome
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,30),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
