@@ -47,12 +47,12 @@ import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=
       --dns=111.11.1.1 \\
        --restart=always \\
       registry.cn-hangzhou.aliyuncs.com/tiptime/ttnode:latest
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="v2raya" tabindex="-1"><a class="header-anchor" href="#v2raya" aria-hidden="true">#</a> V2raya</h2><p>带有webui的V2ray管理程序，可作为透明网关</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run -d \\
-  --restart=always \\
-  --privileged \\
-  --network=OP \\
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="v2raya" tabindex="-1"><a class="header-anchor" href="#v2raya" aria-hidden="true">#</a> V2raya</h2><p>带有webui的V2ray管理程序，可作为透明网关</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run -d  \\
+  --restart=always  \\
+  --privileged  \\
+  --network=RUI  \\
   --name v2raya \\
-  --ip 192.168.31.23 \\
+  --ip 192.168.31.10 \\
   -e V2RAYA_ADDRESS=0.0.0.0:4022 \\
    -v /docer/v2raya:/etc/v2raya \\
   mzz2017/v2raya
