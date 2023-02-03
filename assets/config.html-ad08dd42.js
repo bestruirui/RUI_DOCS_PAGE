@@ -4,11 +4,13 @@ docker start -i  name //启动并进入交互
 docker start -a  name //在前端显示日志
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="构建容器" tabindex="-1"><a class="header-anchor" href="#构建容器" aria-hidden="true">#</a> 构建容器</h2><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker build -t name:tag .
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="custom-container tip"><p class="custom-container-title">提示</p><p>命令最后的 <mark><strong>.</strong></mark> 不能省略</p></div><h2 id="创建网络" tabindex="-1"><a class="header-anchor" href="#创建网络" aria-hidden="true">#</a> 创建网络</h2><ul><li><h4 id="macvlan网络" tabindex="-1"><a class="header-anchor" href="#macvlan网络" aria-hidden="true">#</a> macvlan网络</h4></li></ul><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker network create -d \\
-       macvlan -o parent=eth1 RUI \\
+       macvlan -o \\
+        parent=eth0 \\
+        RUI \\
        --subnet=192.168.31.0/24  \\
        --gateway=192.168.31.1 \\
-       --ipv6 --subnet=2409:8a04:6612:cf40::/64
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="清理日志" tabindex="-1"><a class="header-anchor" href="#清理日志" aria-hidden="true">#</a> 清理日志</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token shebang important">#!/bin/sh</span>
+       --ipv6 --subnet=fe80::/8
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="清理日志" tabindex="-1"><a class="header-anchor" href="#清理日志" aria-hidden="true">#</a> 清理日志</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token shebang important">#!/bin/sh</span>
 <span class="token builtin class-name">echo</span>  <span class="token string">&quot;========开始清理容器日志 <span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%Y-%m-%d<span class="token punctuation">\\</span> %H:%M:%S<span class="token variable">)</span></span>========&quot;</span>  
   
 <span class="token assign-left variable">logs</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">find</span> /var/lib/docker/containers/ <span class="token parameter variable">-name</span> *-json.log<span class="token variable">)</span></span>  
@@ -20,4 +22,4 @@ docker start -a  name //在前端显示日志
         <span class="token keyword">done</span>  
 
 <span class="token builtin class-name">echo</span> <span class="token string">&quot;========清理完成 <span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%Y-%m-%d<span class="token punctuation">\\</span> %H:%M:%S<span class="token variable">)</span></span>========&quot;</span> 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,15),d=[l];function c(o,r){return e(),n("div",null,d)}const p=a(i,[["render",c],["__file","config.html.vue"]]);export{p as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,15),d=[l];function c(r,o){return e(),n("div",null,d)}const p=a(i,[["render",c],["__file","config.html.vue"]]);export{p as default};
