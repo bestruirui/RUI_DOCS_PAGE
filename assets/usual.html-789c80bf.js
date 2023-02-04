@@ -26,6 +26,13 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
     --dns 111.11.1.1 \\
     --restart unless-stopped \\
     whyour/qinglong:latest
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="青龙tool" tabindex="-1"><a class="header-anchor" href="#青龙tool" aria-hidden="true">#</a> 青龙tool</h2><p>变量提交工具</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run \\
+   --restart=always \\
+   -itd --name QLTools \\
+   -v /docker/usb/qltool/config:/QLTools/config \\
+   -v /docker/usb/qltool/plugin:/QLTools/plugin \\
+   -p 15000:15000 \\
+    nuanxinqing123/qltools:latest
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="alist" tabindex="-1"><a class="header-anchor" href="#alist" aria-hidden="true">#</a> Alist</h2><p>网盘目录列表程序</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run -d \\
      --restart=always \\
      -v /doetclist:/opt/alist/data \\
@@ -76,4 +83,4 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
     -v /docker/adguard/workdir:/opt/adguardhome/work \\
     -v /docker/adguard/confdir:/opt/adguardhome/conf \\
     -d adguard/adguardhome
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,30),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,33),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
