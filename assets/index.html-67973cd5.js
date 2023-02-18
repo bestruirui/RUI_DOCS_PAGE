@@ -1,0 +1,1 @@
+import{ab as t,C as a,D as n,A as e,O as s}from"./framework-e618a78f.js";const o={},c=e("h2",{id:"windows软件",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#windows软件","aria-hidden":"true"},"#"),s(" Windows软件")],-1),d=[c];function r(i,_){return a(),n("div",null,d)}const l=t(o,[["render",r],["__file","index.html.vue"]]);export{l as default};
