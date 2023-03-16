@@ -1,1 +1,0 @@
-import{ab as c,C as s,D as o,A as e,O as t}from"./framework-e618a78f.js";const a="/assets/20230313212019-2e5e16fd.png",n={},r=e("p",null,[t("暂时还不知道为什么"),e("br"),t(" 别的时钟配置串口接受的数据有误"),e("br"),e("img",{src:a,alt:"",loading:"lazy"})],-1),_=[r];function l(d,i){return s(),o("div",null,_)}const m=c(n,[["render",l],["__file","clock.html.vue"]]);export{m as default};
