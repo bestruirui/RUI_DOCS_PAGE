@@ -1,0 +1,1 @@
+import{ab as t,C as a,D as n,A as e,O as s}from"./framework-e618a78f.js";const o={},c=e("h2",{id:"fusionapp",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#fusionapp","aria-hidden":"true"},"#"),s(" FusionAPP")],-1),r=e("p",null,"网页转APP",-1),i=[c,r];function _(d,l){return a(),n("div",null,i)}const f=t(o,[["render",_],["__file","index.html.vue"]]);export{f as default};
