@@ -44,17 +44,18 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
   -v /docker/code/home:/home/coder/project \\
   codercom/code-server:latest
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="甜糖心愿" tabindex="-1"><a class="header-anchor" href="#甜糖心愿" aria-hidden="true">#</a> 甜糖心愿</h2><p>搞钱的</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>  docker run -d \\
-      -v /ttnode:/mnt/data/ttnode \\
+      -v /sata/ttnode0:/mnt/data/ttnode \\
       -v /var/run/docker.sock:/var/run/docker.sock \\
       -v /proc:/host/proc:ro \\
-      --name ttnode \\
+      --name ttnode0 \\
       --hostname ttnode \\
       --privileged \\
-      --net=host \\
+      --net=RUI \\
       --dns=111.11.1.1 \\
+      --ip=192.168.31.15 \\
        --restart=always \\
       registry.cn-hangzhou.aliyuncs.com/tiptime/ttnode:latest
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="网心云" tabindex="-1"><a class="header-anchor" href="#网心云" aria-hidden="true">#</a> 网心云</h2><p>搞钱的</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run -d \\
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="网心云" tabindex="-1"><a class="header-anchor" href="#网心云" aria-hidden="true">#</a> 网心云</h2><p>搞钱的</p><div class="language-docker line-numbers-mode" data-ext="docker"><pre class="language-docker"><code>docker run -d \\
     --name=wxedge \\
     --restart=always \\
     --privileged \\
