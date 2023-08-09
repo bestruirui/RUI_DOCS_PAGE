@@ -84,7 +84,7 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
    --name ddns-go \\
    --restart=always \\
    --net=host \\
-   -v /opt/ddns-go:/root \\
+   -v /docker/ddns-go:/root \\
     jeessy/ddns-go
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="adguard" tabindex="-1"><a class="header-anchor" href="#adguard" aria-hidden="true">#</a> AdGuard</h2><p>去广告</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run --name AdGuard\\
     --restart unless-stopped\\
@@ -110,4 +110,9 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
    -v /nginx/data:/data \\
    -v /nginx/letsencrypt:/letsencrypt  \\
    jc21/nginx-proxy-manager:latest
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,45),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="home-assistant" tabindex="-1"><a class="header-anchor" href="#home-assistant" aria-hidden="true">#</a> home-assistant</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -d \\
+   --name=&quot;home-assistants&quot; \\
+   -v /docker/home:/config \\
+   -p 8123:8123 \\
+   homeassistant/home-assistant
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,47),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
