@@ -115,4 +115,10 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
    -v /docker/home:/config \\
    -p 8123:8123 \\
    homeassistant/home-assistant
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,47),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="firefox" tabindex="-1"><a class="header-anchor" href="#firefox" aria-hidden="true">#</a> Firefox</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -d \\
+    --name=firefox \\
+    -p 5800:5800 \\
+    -v /docker/firefox:/config:rw \\
+    -e ENABLE_CJK_FONT=1 \\
+    jlesage/firefox
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,49),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
