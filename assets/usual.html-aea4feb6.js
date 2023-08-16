@@ -121,4 +121,12 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
     -v /docker/firefox:/config:rw \\
     -e ENABLE_CJK_FONT=1 \\
     jlesage/firefox
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,49),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="filebrowser" tabindex="-1"><a class="header-anchor" href="#filebrowser" aria-hidden="true">#</a> FileBrowser</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run    -d \\
+      -v /docker:/srv    \\
+      -v /docker/filebrowser/filebrowser.db:/database/filebrowser.db   \\ 
+      -v /docker/filebrowser/settings.json:/config/settings.json     \\
+      -e PUID=$(id -u)    \\
+      -e PGID=$(id -g)    \\
+      -p 8080:80   \\
+      filebrowser/filebrowser
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,51),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
