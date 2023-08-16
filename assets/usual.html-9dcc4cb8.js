@@ -129,4 +129,11 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
       -e PGID=$(id -g)    \\
       -p 8080:80   \\
       filebrowser/filebrowser
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,51),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="samba" tabindex="-1"><a class="header-anchor" href="#samba" aria-hidden="true">#</a> Samba</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -it \\
+      --name samba \\
+      -p 139:139 
+      -p 445:445     
+      -v /docker:/mount  \\
+      -d dperson/samba -p \\
+      -s &quot;bestrui;/mount/;yes;no;yes;all;all;all&quot; 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,53),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","usual.html.vue"]]);export{u as default};
