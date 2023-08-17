@@ -1,0 +1,2 @@
+import{ab as e,C as a,D as t,ad as d}from"./framework-e618a78f.js";const n={},s=d(`<h2 id="备份文件" tabindex="-1"><a class="header-anchor" href="#备份文件" aria-hidden="true">#</a> 备份文件</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>/var/lib/vz/dump
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,2),r=[s];function c(i,l){return a(),t("div",null,r)}const _=e(n,[["render",c],["__file","2023-08-17.html.vue"]]);export{_ as default};
