@@ -1,4 +1,4 @@
-import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=i(`<h2 id="portainer" tabindex="-1"><a class="header-anchor" href="#portainer" aria-hidden="true">#</a> Portainer</h2><p>Docker可视化管理(汉化版)</p><div class="language-dockcer line-numbers-mode" data-ext="dockcer"><pre class="language-dockcer"><code>docker run -d \\
+import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=i(`<h2 id="portainer" tabindex="-1"><a class="header-anchor" href="#portainer" aria-hidden="true">#</a> Portainer</h2><p>Docker可视化管理(汉化版)</p><div class="language-dockcer line-numbers-mode" data-ext="dockcer"><pre class="language-dockcer"><code>docker run -d \\
    --restart=always \\
    --name=&quot;portainer&quot; \\
    -p 9001:9000 \\
@@ -136,4 +136,9 @@ import{ab as e,C as d,D as n,ad as i}from"./framework-e618a78f.js";const a={},r=
       -v /docker:/mount  \\
       -d dperson/samba -p \\
       -s &quot;bestrui;/mount/;yes;no;yes;all;all;all&quot; 
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,53),s=[r];function l(c,v){return d(),n("div",null,s)}const u=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="grafana" tabindex="-1"><a class="header-anchor" href="#grafana" aria-hidden="true">#</a> Grafana</h2><p>监控面板</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -d \\
+   -p 3010:3000 \\
+   --name=grafana   \\
+   --volume /docker/grafana:/var/lib/grafana \\
+    dockerproxy.com/grafana/grafana
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,56),s=[r];function l(c,v){return n(),d("div",null,s)}const u=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{u as default};
