@@ -3,7 +3,7 @@ import{ab as e,C as t,D as p,A as s,O as n,J as c,ac as i,ad as o,R as l}from"./
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>其执行过程可表示为下图：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>      ┆
 ╭┈┈┈┈┈▼┈┈┈┈┈╮ 
-┆ condition ├┈┈┈╮
+┆   判断     ├┈┈┈╮
 ╰┈┈┈┈┈┈┈┈┈┈┈╯   ┆
       ┆ <span class="token boolean">true</span>    ┆ <span class="token boolean">false</span>
       ▼         ┆
@@ -28,7 +28,7 @@ import{ab as e,C as t,D as p,A as s,O as n,J as c,ac as i,ad as o,R as l}from"./
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>其执行过程可表示为下图：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>                   ┆
                    ▼
        <span class="token boolean">true</span>  ╭┈┈┈┈┈┴┈┈┈┈┈╮ <span class="token boolean">false</span>
-     ╭┈┈┈┈┈┈┈┤ condition ├┈┈┈┈┈┈┈╮
+     ╭┈┈┈┈┈┈┈┤     判断   ├┈┈┈┈┈┈┈╮
      ▼       ╰┈┈┈┈┈┈┈┈┈┈┈╯       ▼
 ╭┈┈┈┈┴┈┈┈┈┈╮                ╭┈┈┈┈┴┈┈┈┈┈╮
 ┆  语句块1  ┆                ┆  语句块2  ┆
