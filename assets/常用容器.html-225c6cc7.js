@@ -141,4 +141,20 @@ import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=
    --name=grafana   \\
    --volume /docker/grafana:/var/lib/grafana \\
     dockerproxy.com/grafana/grafana
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,56),s=[r];function l(c,v){return n(),d("div",null,s)}const u=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="jellyfin" tabindex="-1"><a class="header-anchor" href="#jellyfin" aria-hidden="true">#</a> Jellyfin</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -d \\
+ --name=jellyfin  \\
+ -p 8094:8096  \\
+ -v /docker/jellyfin/config:/config  \\
+ -v /docker/jellyfin/cache:/cache  \\
+ -v /docker/jellyfin/data:/data    \\
+ --restart=unless-stopped   \\
+ dockerproxy.com/jellyfin/jellyfin
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="dbgate" tabindex="-1"><a class="header-anchor" href="#dbgate" aria-hidden="true">#</a> dbgate</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -it \\
+--name dbgate  \\
+-p 3456:3000 \\
+-e CONNECTIONS=&#39;con1&#39; \\
+-e LABEL_con1=&#39;SQLite&#39;\\
+-e FILE_con1=&#39;/data/memos_prod.db&#39;\\
+-e ENGINE_con1=&#39;sqlite@dbgate-plugin-sqlite&#39;  \\
+dockerproxy.com/dbgate/dbgate
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,60),s=[r];function l(c,v){return n(),d("div",null,s)}const t=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{t as default};
