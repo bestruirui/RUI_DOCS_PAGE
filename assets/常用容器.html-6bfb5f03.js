@@ -157,4 +157,10 @@ import{ab as e,C as n,D as d,ad as i}from"./framework-e618a78f.js";const a={},r=
 -e FILE_con1=&#39;/data/memos_prod.db&#39;\\
 -e ENGINE_con1=&#39;sqlite@dbgate-plugin-sqlite&#39;  \\
 dockerproxy.com/dbgate/dbgate
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,60),s=[r];function l(c,v){return n(),d("div",null,s)}const t=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{t as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="wakapi" tabindex="-1"><a class="header-anchor" href="#wakapi" aria-hidden="true">#</a> wakapi</h2><p>Code TIme Track</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -d \\
+  -p 3100:3000 \\
+  -e &quot;WAKAPI_PASSWORD_SALT=abcd&quot; \\
+  -v /docker/wakapi:/data \\
+  --name wakapi \\
+  ghcr.dockerproxy.com/muety/wakapi:latest
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,63),s=[r];function l(c,v){return n(),d("div",null,s)}const t=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{t as default};
