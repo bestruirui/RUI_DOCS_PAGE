@@ -163,4 +163,20 @@ dockerproxy.com/dbgate/dbgate
   -v /docker/wakapi:/data \\
   --name wakapi \\
   ghcr.dockerproxy.com/muety/wakapi:latest
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,63),s=[r];function l(c,v){return n(),d("div",null,s)}const t=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{t as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="cherry" tabindex="-1"><a class="header-anchor" href="#cherry" aria-hidden="true">#</a> cherry</h2><p>bookmark</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>docker run -d --name cherry \\
+  -v /docker/cherry:/data \\
+  -p &quot;8040:8000&quot; \\
+  -e &quot;JWT_SECRET=qwejasd&quot; \\
+  -e &quot;ENABLE_PUBLIC_REGISTRATION=1&quot; \\
+  ghcr.dockerproxy.com/haishanh/cherry:main
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="telegram-download" tabindex="-1"><a class="header-anchor" href="#telegram-download" aria-hidden="true">#</a> Telegram Download</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code> docker run -it \\
+ -p 5000:5000 \\
+ -v ./downloads:/app/downloads \\
+ -v ./rclone:$HOME/.config/rclone \\
+ -v ./app/config.yaml:/app/config.yaml \\
+ -v ./app/data.yaml:/app/data.yaml \\
+ -v ./app/log:/app/log \\
+ -v ./app/temp:/app/temp \\
+ -v ./sessions/:/app/sessions \\
+dockerproxy.com/tangyoha/telegram_media_downloader
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,68),s=[r];function l(c,v){return n(),d("div",null,s)}const t=e(a,[["render",l],["__file","常用容器.html.vue"]]);export{t as default};
