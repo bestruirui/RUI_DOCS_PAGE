@@ -1,0 +1,1 @@
+import{ab as a,C as t,D as s,A as e,O as c}from"./framework-e618a78f.js";const n={},r=e("h2",{id:"clash",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#clash","aria-hidden":"true"},"#"),c(" Clash")],-1),o=[r];function d(_,h){return t(),s("div",null,o)}const l=a(n,[["render",d],["__file","index.html.vue"]]);export{l as default};
