@@ -11,4 +11,12 @@ journalctl --vacuum-time<span class="token operator">=</span>2d
 <span class="token function">rm</span> <span class="token parameter variable">-rf</span> ~/.bash_history
 <span class="token function">history</span> <span class="token parameter variable">-c</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="debian换源" tabindex="-1"><a class="header-anchor" href="#debian换源" aria-hidden="true">#</a> Debian换源</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>sudo sed -i &#39;s/deb.debian.org/mirrors.ustc.edu.cn/g&#39; /etc/apt/sources.list
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,10),c=[d];function t(r,l){return e(),s("div",null,c)}const u=a(i,[["render",t],["__file","通用命令.html.vue"]]);export{u as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="bashrc备份" tabindex="-1"><a class="header-anchor" href="#bashrc备份" aria-hidden="true">#</a> bashrc备份</h2><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code># ~/.bashrc: executed by bash(1) for non-login shells.
+umask 022
+PS1=&#39;\\[\\e[01;32m\\]\\u@\\h\\[\\e[0m\\]:\\[\\e[01;34m\\]\\w\\[\\e[0m\\]\\$ &#39;
+export LS_OPTIONS=&#39;--color=auto&#39;
+eval &quot;$(dircolors)&quot;
+alias ls=&#39;ls $LS_OPTIONS&#39;
+alias ll=&#39;ls $LS_OPTIONS -l&#39;
+alias l=&#39;ls $LS_OPTIONS -lA&#39;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,12),l=[d];function r(c,t){return e(),s("div",null,l)}const u=a(i,[["render",r],["__file","通用命令.html.vue"]]);export{u as default};
